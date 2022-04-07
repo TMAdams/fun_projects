@@ -34,7 +34,8 @@ def fetch_random_number():
         data=data,
         headers=headers
     )
-    return(str(print(response.text)))
+    number = str(response.text.split('data":[')[1].split(']')[0])
+    return(number)
 
 # Translate your random number to a magic 8 ball response
 
@@ -82,13 +83,14 @@ def get_answer():
             answer = "Outlook not so good."
         case "20":
             answer = "Very doubtful."
-    return(string)
+    return(answer)
 
 # Prepare main function
 
 
 def main():
-    print(get_answer())
+    result = get_answer()
+    print(result)
 
 
 if __name__ == '__main__':
