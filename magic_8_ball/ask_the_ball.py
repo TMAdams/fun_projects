@@ -6,6 +6,16 @@
 
 import requests
 import json
+import argparse
+
+# Prepare function to parse CLI arguments
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description='Ask a magic 8 ball for \
+    wisdom')
+    parser.add_argument('--api-key', required=True, help='RANDOM.org API key')
+    return parser.parse_args()
 
 # Prepare function to get a random number from RANDOM.org
 
