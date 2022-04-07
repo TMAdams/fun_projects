@@ -39,7 +39,8 @@ def fetch_random_number():
 # Translate your random number to a magic 8 ball response
 
 
-def get_answer(number):
+def get_answer():
+    number = fetch_random_number()
     match number:
         case "1":
             answer = "It is certain."
@@ -82,3 +83,9 @@ def get_answer(number):
         case "20":
             answer = "Very doubtful."
     return(answer)
+
+# Prepare main function
+
+
+def main():
+    print(get_answer())
