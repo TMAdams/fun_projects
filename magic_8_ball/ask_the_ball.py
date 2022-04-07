@@ -43,45 +43,45 @@ def get_answer():
     number = fetch_random_number()
     match number:
         case "1":
-            string = "It is certain."
+            answer = "It is certain."
         case "2":
-            string = "It is decidedly so."
+            answer = "It is decidedly so."
         case "3":
-            string = "Without a doubt."
+            answer = "Without a doubt."
         case "4":
-            string = "Yes definitely."
+            answer = "Yes definitely."
         case "5":
-            string = "You may rely on it."
+            answer = "You may rely on it."
         case "6":
-            string = "As I see it, yes."
+            answer = "As I see it, yes."
         case "7":
-            string = "Most likely."
+            answer = "Most likely."
         case "8":
-            string = "Outlook good."
+            answer = "Outlook good."
         case "9":
-            string = "Yes."
+            answer = "Yes."
         case "10":
-            string = "Signs point to yes."
+            answer = "Signs point to yes."
         case "11":
-            string = "Reply hazy, try again."
+            answer = "Reply hazy, try again."
         case "12":
-            string = "Ask again later."
+            answer = "Ask again later."
         case "13":
-            string = "Better not tell you now."
+            answer = "Better not tell you now."
         case "14":
-            string = "Cannot predict now."
+            answer = "Cannot predict now."
         case "15":
-            string = "Concentrate and ask again."
+            answer = "Concentrate and ask again."
         case "16":
-            string = "Don't count on it."
+            answer = "Don't count on it."
         case "17":
-            string = "My reply is no."
+            answer = "My reply is no."
         case "18":
-            string = "My sources say no."
+            answer = "My sources say no."
         case "19":
-            string = "Outlook not so good."
+            answer = "Outlook not so good."
         case "20":
-            string = "Very doubtful."
+            answer = "Very doubtful."
     return(string)
 
 # Prepare main function
