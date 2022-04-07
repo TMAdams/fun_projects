@@ -20,12 +20,12 @@ def parse_args():
 # Prepare function to get a random number from RANDOM.org
 
 
-def fetch_random_number():
+def fetch_random_number(key):
     query_data = {
         "jsonrpc": "2.0",
         "method": "generateIntegers",
         "params": {
-            "apiKey": "56edb62f-4122-4a64-bbd3-e17149ef925c",
+            "apiKey": key,
             "n": 1,
             "min": 1,
             "max": 20,
@@ -50,8 +50,8 @@ def fetch_random_number():
 # Translate your random number to a magic 8 ball response
 
 
-def get_answer():
-    number = fetch_random_number()
+def get_answer(key):
+    number = fetch_random_number(key)
     match number:
         case "1":
             answer = "It is certain."
@@ -99,7 +99,9 @@ def get_answer():
 
 
 def main():
-    result = get_answer()
+    args = parse_args()
+    key = args.key
+    result = get_answer(key)
     print(result)
 
 
