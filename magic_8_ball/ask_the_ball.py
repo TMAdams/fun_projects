@@ -14,7 +14,7 @@ import argparse
 def parse_args():
     parser = argparse.ArgumentParser(description='Ask a magic 8 ball for \
     wisdom')
-    parser.add_argument('--api-key', required=True, help='RANDOM.org API key')
+    parser.add_argument('--api_key', required=True, help='RANDOM.org API key')
     return parser.parse_args()
 
 # Prepare function to get a random number from RANDOM.org
@@ -100,7 +100,7 @@ def get_answer(key):
 
 def main():
     args = parse_args()
-    key = args.key
+    key = args.api_key
     result = get_answer(key)
     print(result)
 
