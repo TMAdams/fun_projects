@@ -89,3 +89,7 @@ def get_answer():
 
 def main():
     print(get_answer())
+
+
+if __name__ == '__main__':
+    main()
