@@ -16,7 +16,7 @@ query_data = {
     "jsonrpc": "2.0",
     "method": "generateIntegers",
     "params": {
-        "apiKey": your_api_key,
+        "apiKey": "your_api_key",
         "n": 34,
         "min": 1,
         "max": 34,
