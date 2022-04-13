@@ -41,7 +41,7 @@ response = requests.post(
 
 result_json = response.json()
 
-shuffled_deck = result["result"]["random"]["data"]
+shuffled_deck = result_json["result"]["random"]["data"]
 
 count = 0
 
