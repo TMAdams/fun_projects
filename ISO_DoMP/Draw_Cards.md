@@ -38,4 +38,8 @@ response = requests.post(
     data=data,
     headers=headers
 )
+
+result_json = response.json()
+
+shuffled_deck = result["result"]["random"]["data"]
 ```
