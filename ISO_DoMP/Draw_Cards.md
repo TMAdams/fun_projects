@@ -9,6 +9,7 @@ Run this in an interactive session so numbers are all picked beforehand but card
 
 import requests
 import json
+from PIL import Image
 
 # Generate a list of random numbers to simulate card deck order for drawing
 
@@ -49,6 +50,7 @@ count = 0
 def draw_card():
     global shuffled_deck
     global count
+    global img
     card_number = str(shuffled_deck[count])
     count += 1
     match card_number:
@@ -78,6 +80,8 @@ def draw_card():
             card = "Riot"
         case "13":
             card = "Honour"
+            img = Image.open("ISO\Honour.png")
+            img.show()
         case "14":
             card = "The Forum"
         case "15":
