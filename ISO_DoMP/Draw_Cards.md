@@ -122,5 +122,7 @@ def draw_card():
             card = "The Silkworm"
     return(card)
 
+# Simply run this command whenever you need a new card
+
 draw_card()
 ```
