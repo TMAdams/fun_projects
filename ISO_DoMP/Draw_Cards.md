@@ -75,8 +75,8 @@ def draw_card():
             img = Image.open("ISO\Sestos.jpg")
             img.show()
         case "6":
-            card = "The Oracle - You see a glimpse of future suffering, now avoid it"
-            img = Image.open("ISO\The_Oracle.jpg")
+            card = "The Oracles - You see a glimpse of future suffering, now avoid it"
+            img = Image.open("ISO\The_Oracles.jpg")
             img.show()
         case "7":
             card = "The Augura - You will be visited"
