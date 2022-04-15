@@ -87,8 +87,8 @@ def draw_card():
             img = Image.open("ISO\The_Giant.jpg")
             img.show()
         case "9":
-            card = "The Mecha Pyrrhichios - Enhance your form"
-            img = Image.open("ISO\The_Mecha_Pyrrhichios.jpg")
+            card = "Mecha Pyrrhichios - Enhance your form"
+            img = Image.open("ISO\Mecha_Pyrrhichios.jpg")
             img.show()
         case "10":
             card = "The Dreary - You are drained of function"
